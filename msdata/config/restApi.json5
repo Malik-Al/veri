@@ -1,0 +1,29 @@
+{
+    // Включение / отключение REST API для микросервиса. Не работает без перезагрузки микросервиса.
+    restApiEnabled: true,
+
+    // Заголовок allowOriginHeader в ответах REST API. Работает без перезагрузки микросервиса.
+    allowOriginHeader: "*",
+
+    // TCP порт для REST API. Не работает без перезагрузки микросервиса.
+    apiTcpPort: 8016,
+
+    // Сетевой интерфейс для REST API. Если равно "0.0.0.0", то биндится на все доступные интерфейсы. Не работает без перезагрузки микросервиса.
+    apiBindIp: "0.0.0.0",
+
+    // Методы API. Не работает без перезагрузки микросервиса.
+    apiMethods: [
+        {
+            method: "POST",
+            url: "/rest/send-infome",
+            metric: 'api-send-infome',
+            funcName: "sendToInfome",
+            bodyParams: [
+                    { name: "requisite", type: "string", required: true },
+                    { name: "text", type: "string", required: true },
+                    { name: "receivingId", type: "string" },
+                    { name: "_id", type: "string", required: true }
+            ]
+        },
+    ]
+}

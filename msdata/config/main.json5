@@ -1,0 +1,6 @@
+{
+    serviceName: "TEST.proc-notif-o24",
+    instanceName: "TEST.proc-notif-o24-1",
+    
+    infoMeUrl: "http://srv27:8091/rest/registerpushsms"
+}

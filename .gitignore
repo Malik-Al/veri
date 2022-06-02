@@ -1,0 +1,9 @@
+.idea
+node_modules
+msdata/logs/*
+dist
+*.spec.ts
+.vscode
+.git
+mock-*
+coverage
