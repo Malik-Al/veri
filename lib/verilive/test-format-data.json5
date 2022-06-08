@@ -1,0 +1,99 @@
+
+
+customers = {
+        "customer_id": "dbb23aba-0e4b-4d3c-a23b-dbe8e2206ca8",
+        "name": "Bob",
+        "surname": "Bobov",
+        "second_name": "bobovich",
+        "pin": 45123,
+        "gender": "муж",
+        "birth_date": "2020:20:20",
+        "passport_series": "21212",
+        "passport_number": "12121",
+        "void_status": "test",
+        "issued_date": "test",
+        "passport_authority": "test",
+        "passport_authority_code": "test",
+        "expired_date": "test",
+        "marital_status": "test",
+        "nationality": "test",
+        "resident": true,
+        "age": 28,
+        "contact_phone": "+996xx-xx-xx-xx",
+        "address_living": "test",
+        "address_fact": "test",
+        "department": "test",
+        "photo_coincidence": "95",
+        "doc_coincidence": "95",
+        "video_coincidence": "95",
+        "result_verification": true,
+        "client_id": 787888,                     // id client
+        "count_verification": 5,
+        "request_at": "2022-06-03T12:06:06.621Z"
+    }
+
+
+// url http://localhost:3000/api/logs/list/787888
+{
+        "customer_id": "dbb23aba-0e4b-4d3c-a23b-dbe8e2206ca8",
+        "name": "Bob",
+        "surname": "Bobov",
+        "second_name": "bobovich",
+        "pin": 45123,
+        "gender": "муж",
+        "birth_date": "2020:20:20",
+        "passport_series": "21212",
+        "passport_number": "12121",
+        "void_status": "test",
+        "issued_date": "test",
+        "passport_authority": "test",
+        "passport_authority_code": "test",
+        "expired_date": "test",
+        "marital_status": "test",
+        "nationality": "test",
+        "resident": true,
+        "age": 28,
+        "contact_phone": "+996xx-xx-xx-xx",
+        "address_living": "test",
+        "address_fact": "test",
+        "department": "test",
+        "photo_coincidence": "95",
+        "doc_coincidence": "95",
+        "video_coincidence": "95",
+        "result_verification": true,
+        "client_id": 787888,                     // id client
+        "count_verification": 5,
+        "request_at": "2022-06-03T12:06:06.621Z"
+        "logs" : [
+                {
+                    "journal_log_id": "6065b2c5-e38c-4821-a6e9-f3f2fd93c73b",
+                    "customer_extract_id": "dbb23aba-0e4b-4d3c-a23b-dbe8e2206ca8",
+                    "confirm_per_data": "test",
+                    "photo_coincidence": "test",
+                    "doc_coincidence": "муж",
+                    "liveness_coincidence": "2020:20:20",
+                    "result_verification": false,
+                    "created_at": "2022-06-07T05:43:34.135Z" // new Date 
+                },
+                {
+                    "journal_log_id": "7fe5a1fa-7e3a-4f89-a644-d8d928622299",
+                    "customer_extract_id": "dbb23aba-0e4b-4d3c-a23b-dbe8e2206ca8",
+                    "confirm_per_data": "test",
+                    "photo_coincidence": "test",
+                    "doc_coincidence": "муж",
+                    "liveness_coincidence": "2020:20:20",
+                    "result_verification": true,
+                    "created_at": "2022-06-03T12:37:32.966Z"
+                },
+                {
+                    "journal_log_id": "830974dc-7e89-42a8-a83c-0601507827b1",
+                    "customer_extract_id": "dbb23aba-0e4b-4d3c-a23b-dbe8e2206ca8",
+                    "confirm_per_data": "test",
+                    "photo_coincidence": "test",
+                    "doc_coincidence": "муж",
+                    "liveness_coincidence": "2020:20:20",
+                    "result_verification": false,
+                    "created_at": "2022-06-03T12:37:46.029Z"
+                }
+        ]
+}
